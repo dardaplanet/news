@@ -1,0 +1,52 @@
+
+<!-- 数据库连接池 c3p0 -->
+<c3p0-config>
+
+	<default-config>
+	
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+<!-- 		jdbc:mysql://localhost:3306/vips?characterEncoding=utf8&useSSL=true -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/news?characterEncoding=utf8&amp;useSSL=true</property>
+		<property name="user">root</property>
+		<property name="password">zhaoda</property>
+		
+<!-- 		当数据库连接池中的连接耗尽时c3p0一次性获取的连接数   Default : 3 -->
+		<property name="acquireIncrement">5</property>
+<!-- 		初始化数据库连接池时连接的数量 -->
+		<property name="initialPoolSize">10</property>
+<!-- 		数据库连接池中最小的数据库连接数 -->
+		<property name="minPoolSize">5</property>
+<!-- 		数据库连接池中最大的数据库连接数 -->
+		<property name="maxPoolSize">20</property>
+		
+		
+<!-- 		1.breakAfterAcquireFailure=false，为true会导致连接池占满后不提供服务。所以必须为false -->
+<!-- 		2.acquireRetryAttempts=10，获取连接失败时重试10次，默认重试30次，减少重试次数。 -->
+<!-- 		3.idleConnectionTestPeriod=30，每30秒检查一次空闲连接，加快释放连接。 -->
+<!-- 		4.maxIdleTime=10，连接10秒内不使用则释放连接，加快连接释放。 -->
+<!-- 		5.checkoutTimeout=10000，获取连接超时时间为10秒，默认则无限等待。设置此值高并发时（连接数占满）可能会引发中断数据库操作风险。 -->
+<!-- 		6.unreturnedConnectionTimeout=20，连接回收超时时间，设置比maxIdleTime大 -->
+<!-- 		7.debugUnreturnedConnectionStackTraces=true，连接泄漏时打印堆栈信息 -->
+<!-- 		<property name="breakAfterAcquireFailure">false</property> -->
+<!-- 		<property name="acquireRetryAttempts">10</property> -->
+<!-- 		<property name="idleConnectionTestPeriod">30</property> -->
+<!-- 		<property name="maxIdleTime">10</property> -->
+<!-- 		<property name="checkoutTimeout">10000</property> -->
+<!-- 		<property name="unreturnedConnectionTimeout">20</property> -->
+<!-- 		<property name="debugUnreturnedConnectionStackTraces">true</property> -->
+	
+
+	
+	</default-config>
+
+</c3p0-config>
+
+
+
+
+
+
+
+
+
+
