@@ -7,8 +7,8 @@
 		<property name="driverClass">com.mysql.jdbc.Driver</property>
 <!-- 		jdbc:mysql://localhost:3306/vips?characterEncoding=utf8&useSSL=true -->
 		<property name="jdbcUrl">jdbc:mysql://localhost:3306/news?characterEncoding=utf8&amp;useSSL=true</property>
-		<property name="user">root</property>
-		<property name="password">zhaoda</property>
+		<property name="user">xxx</property>
+		<property name="password">xxx</property>
 		
 <!-- 		当数据库连接池中的连接耗尽时c3p0一次性获取的连接数   Default : 3 -->
 		<property name="acquireIncrement">5</property>
